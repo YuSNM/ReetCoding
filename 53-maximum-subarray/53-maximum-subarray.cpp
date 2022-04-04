@@ -9,7 +9,7 @@ public:
         }
         return _max;
     }
-    
+};
     /*
         int divconq(vector<int>& nums, int left, int right) {
         if(left==right) return nums[left];
@@ -33,4 +33,3 @@ public:
     }
     
     */
-};
