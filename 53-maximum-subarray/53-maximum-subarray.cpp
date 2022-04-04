@@ -1,6 +1,17 @@
 class Solution {
 public:
-    int divconq(vector<int>& nums, int left, int right) {
+    int maxSubArray(vector<int>& nums) {
+        int _max = -10000;
+        int sum = 0;
+        for(auto& i : nums) {
+            sum = sum < 0 ? i : sum + i;
+            if(_max < sum) _max = sum;
+        }
+        return _max;
+    }
+    
+    /*
+        int divconq(vector<int>& nums, int left, int right) {
         if(left==right) return nums[left];
         int mid = left + right >> 1;
         int _max = max(divconq(nums, mid + 1, right), divconq(nums, left, mid));
@@ -20,4 +31,6 @@ public:
     int maxSubArray(vector<int>& nums) {
         return divconq(nums, 0, nums.size() - 1);
     }
+    
+    */
 };
