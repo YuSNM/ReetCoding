@@ -1,3 +1,5 @@
+//Time: 84 ms (99.62%), Space: 67.7 MB (91.30%) - LeetHub
+
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
