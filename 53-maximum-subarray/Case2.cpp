@@ -1,3 +1,5 @@
+//Time: 234 ms (5.04%), Space: 67.8 MB (12.10%) - LeetHub
+
 class Solution {
 public:
     int MidMax(vector<int>& nums, int left, int mid, int right) {
