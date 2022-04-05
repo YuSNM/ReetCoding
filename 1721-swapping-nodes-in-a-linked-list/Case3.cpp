@@ -1,5 +1,6 @@
 //Time: 576 ms (97.12%), Space: 180.3 MB (15.77%) - LeetHub
 
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -22,7 +23,7 @@ public:
         ListNode *left, *right, *node;
         int cnt = 1;
     
-        for (left = right = node = head ; node; node = node->next, ++cnt) 
+        for (left = right = node = head ; node; node = node->next, ++cnt)   // 증가하는 cnt와 k를 비교하며 Interactive?
             if(cnt < k) left = left->next;
             else if (cnt > k) right = right->next;
     
