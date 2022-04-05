@@ -1,3 +1,6 @@
+// 이전 높이 이하는 물 넓이 계산 필요 없이 넘겨주어 효율성을 높임
+//Time: 100 ms (77.17%), Space: 59.1 MB (38.72%) - LeetHub
+
 class Solution {
 public:
     int maxArea(vector<int>& height) {
