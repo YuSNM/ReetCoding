@@ -2,7 +2,6 @@
 /*
 ANALYSIS :
     Time Complexity : BigO(N)
-    Space Complexity : BigO(1)
 */
 
 class Solution {
