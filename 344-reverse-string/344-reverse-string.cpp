@@ -1,8 +1,8 @@
 //Time: 27 ms (64.04%), Space: 23.1 MB (93.80%) - LeetHub
 /*
-ANALYSIS :-
-    Time Complexity :- BigO(N)
-    Space Complexity :- BigO(1)
+ANALYSIS :
+    Time Complexity : BigO(N)
+    Space Complexity : BigO(1)
 */
 
 class Solution {
