@@ -1,3 +1,5 @@
+//Time: 0 ms (100.00%), Space: 5.9 MB (23.23%) - LeetHub
+
 // The API isBadVersion is defined for you.
 // bool isBadVersion(int version);
 
