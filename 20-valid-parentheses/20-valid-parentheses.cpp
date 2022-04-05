@@ -1,3 +1,5 @@
+//Time: 4 ms (23.04%), Space: 6.5 MB (9.77%) - LeetHub
+
 class Solution {
 public:
     unordered_map<char, char> map;
