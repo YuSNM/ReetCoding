@@ -1,3 +1,5 @@
+//Time: 131 ms (41.50%), Space: 59.1 MB (38.72%) - LeetHub
+
 class Solution {
 public:
     int maxArea(vector<int>& height) {
