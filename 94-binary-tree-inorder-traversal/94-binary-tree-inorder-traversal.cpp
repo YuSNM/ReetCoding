@@ -10,16 +10,13 @@
  * };
  */
 class Solution {
-public:
     vector<int> v;
-    void func(TreeNode* node) {
-        if(node == NULL) return;
-        func(node->left);
-        v.push_back(node->val);
-        func(node->right);
-    }
+public:
     vector<int> inorderTraversal(TreeNode* root) {
-        func(root);
+        if(root == NULL) return v;
+        inorderTraversal(root->left);
+        v.push_back(root->val);
+        inorderTraversal(root->right);
         return v;
     }
 };
