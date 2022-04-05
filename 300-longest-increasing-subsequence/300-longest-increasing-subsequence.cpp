@@ -1,3 +1,5 @@
+//Time: 20 ms (71.79%), Space: 10.5 MB (65.05%) - LeetHub
+
 class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
