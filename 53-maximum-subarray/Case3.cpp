@@ -1,3 +1,5 @@
+//Time: 261 ms (5.04%), Space: 67.7 MB (91.25%) - LeetHub
+
 class Solution {
     
     struct data {
