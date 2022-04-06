@@ -13,8 +13,7 @@ class Solution {
     public:
     bool DFS(TreeNode* A, TreeNode* B) {
         if(A == nullptr && B == nullptr) return true;
-        else if(A == nullptr ^ B == nullptr) return false;
-        else if(A->val != B->val) return false;
+        else if(A == nullptr ^ B == nullptr || A->val != B->val) return false;
         return DFS(A->left, B->right) && DFS(A->right, B->left);
     }
 
