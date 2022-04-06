@@ -1,3 +1,5 @@
+//Time: 429 ms (45.58%), Space: 10.4 MB (74.83%) - LeetHub
+
 class Solution {
     int HashT[301];
     const int mod = 1000000007;
