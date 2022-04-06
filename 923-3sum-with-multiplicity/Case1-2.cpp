@@ -1,3 +1,5 @@
+//Time: 1378 ms (14.97%), Space: 10.8 MB (20.41%) - LeetHub
+
 class Solution {
     const int mod = 1000000007;
 public:
