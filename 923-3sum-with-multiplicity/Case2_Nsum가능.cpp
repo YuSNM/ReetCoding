@@ -1,5 +1,9 @@
 //Time: 11 ms (94.85%), Space: 10.4 MB (74.57%) - LeetHub
 //
+/*     N <= 3000, M <= 100 (M은 arr[i])
+    Time Complexity : BigO(N + M^M)
+*/
+
 class Solution {
     const int mod = 1000000007;
     int HashT[301] = {0, };                 //Target 의 최대값 300, N sum이라했을떄 최대 접근 가능 값이 N * 100(INPUT의 최대값) 되야한다
