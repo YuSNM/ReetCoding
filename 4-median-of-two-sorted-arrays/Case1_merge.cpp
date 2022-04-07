@@ -1,3 +1,5 @@
+//Time: 58 ms (44.43%), Space: 89.7 MB (42.91%) - LeetHub
+
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
