@@ -1,5 +1,9 @@
 // Time: 58 ms (44.43%), Space: 89.7 MB (42.91%) - LeetHub
-// BigO(N+M)
+/*
+ANALYSIS :
+    Time Complexity : BigO(N+M)
+    Space Complexity : BigO(N+M)
+*/
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
