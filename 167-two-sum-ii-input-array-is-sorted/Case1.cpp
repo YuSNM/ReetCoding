@@ -1,3 +1,5 @@
+//Time: 8 ms (97.00%), Space: 15.5 MB (92.80%) - LeetHub
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
