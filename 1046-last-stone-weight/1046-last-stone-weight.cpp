@@ -1,3 +1,5 @@
+//Time: 0 ms (100.00%), Space: 7.4 MB (97.59%) - LeetHub
+
 class Solution {
 public:
     int lastStoneWeight(vector<int>& stones) {
