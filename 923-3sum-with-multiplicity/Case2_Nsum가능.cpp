@@ -1,7 +1,8 @@
-
+//Time: 11 ms (94.85%), Space: 10.4 MB (74.57%) - LeetHub
+//
 class Solution {
     const int mod = 1000000007;
-    int HashT[301] = {0, };
+    int HashT[301] = {0, };                 //Target 의 최대값 300, N sum이라했을떄 최대 접근 가능 값이 N * 100(INPUT의 최대값) 되야한다
 public:
     int Combi(long long n, int r) {
         for(int i = n - 1, f = 2; f <= r; i--, f++) 
