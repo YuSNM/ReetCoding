@@ -13,13 +13,15 @@ class Solution {
     int depth = 0;
 public:
     void dfs(TreeNode* node, int d) {
-        if(node == nullptr) return;
-        depth = max(depth, d);
+        if(node == nullptr) {
+            depth = max(depth, d);
+            return;
+        }
         dfs(node->left, d + 1);
         dfs(node->right, d + 1);
     }
     int maxDepth(TreeNode* root) {
-        dfs(root, 1);
+        dfs(root, 0);
         return depth;
     }
 };
