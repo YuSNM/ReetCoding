@@ -1,21 +1,14 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        vector<string::iterator> idx;
-
-        for(auto c = s.begin();; ++c)
-            if(c==s.end()) {
-                idx.push_back(c);
-                break;
+        for(auto i = s.begin(), bef = s.begin();; ++i)
+            if(i==s.end()) {
+                reverse(bef, i);
+                return s;
             }
-            else if (*c == ' ')
-                idx.push_back(c);
-
-        auto bef = s.begin();
-        for(auto& i : idx) {
-            reverse(bef, i);
-            bef = i + 1;
-        }
-        return s;
+            else if (*i == ' ') {
+                reverse(bef, i);
+                bef = i + 1;
+            }
     }
 };
