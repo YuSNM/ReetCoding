@@ -1,3 +1,5 @@
+//Time: 44 ms (56.99%), Space: 19.9 MB (63.09%) - LeetHub
+
 class KthLargest {
     priority_queue<int, vector<int>, greater<>> pq;
     int k;
