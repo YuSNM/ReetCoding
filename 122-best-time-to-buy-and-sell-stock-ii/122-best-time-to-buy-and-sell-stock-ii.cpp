@@ -1,3 +1,5 @@
+//Time: 7 ms (74.07%), Space: 13.1 MB (12.64%) - LeetHub
+
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
