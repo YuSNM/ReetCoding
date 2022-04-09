@@ -1,3 +1,5 @@
+// Time: 76 ms (10.33%), Space: 70.9 MB (97.55%) - LeetHub
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
