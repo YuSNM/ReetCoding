@@ -12,9 +12,9 @@ class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
         ListNode* p1 = head, * p2 = head;
-        int cnt = 0;
         while((p1 = p1->next) != nullptr) {
-            if(++cnt % 2) p2 = p2->next;
+            p2 = p2->next;
+            if((p1 = p1->next) == nullptr) return p2;
         }
         return p2;
     }
