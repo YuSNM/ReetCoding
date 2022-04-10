@@ -1,10 +1,12 @@
+//Time: 0 ms (100.00%), Space: 8.3 MB (95.60%) - LeetHub
+
 class Solution {
 public:
     int calPoints(vector<string>& ops) {
         vector<int> st(ops.size());
         int j = 0;
 
-        for (auto& i : ops) {
+        for (auto& i : ops) 
             if(i=="C") --j;
             else if (i=="D") 
                 st[j++] = st[j - 1] * 2;
@@ -12,7 +14,6 @@ public:
                 st[j++] = st[j - 1] + st[j - 2];
             else 
                 st[j++] = stoi(i);
-        }
         
         return accumulate(st.begin(), st.begin() + j, 0);
     }   
