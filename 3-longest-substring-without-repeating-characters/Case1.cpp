@@ -1,3 +1,5 @@
+//Time: 4 ms (96.13%), Space: 7.5 MB (84.46%) - LeetHub
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
