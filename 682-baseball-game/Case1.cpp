@@ -1,3 +1,5 @@
+//Time: 10 ms (19.98%), Space: 8.4 MB (69.92%) - LeetHub
+
 class Solution {
 public:
     int calPoints(vector<string>& ops) {
