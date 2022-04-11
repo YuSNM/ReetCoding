@@ -1,3 +1,5 @@
+//Time: 5 ms (87.02%), Space: 7.3 MB (42.48%) - LeetHub
+
 class Solution {
     int CountS1[128];
     int CountS2[128];
