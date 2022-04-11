@@ -1,3 +1,5 @@
+//Time: 15 ms (42.74%), Space: 14 MB (80.69%) - LeetHub
+
 class Solution {
     const int dx[4] = {0, -1, 0, 1}, dy[4] = {-1, 0, 1, 0};
     int NewC, OldC;
