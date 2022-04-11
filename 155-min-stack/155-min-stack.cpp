@@ -1,3 +1,4 @@
+//Time: 80 ms (10.22%), Space: 17.1 MB (6.77%) - LeetHub
 
 class MinStack {
     int stack[30000];
