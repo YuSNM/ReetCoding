@@ -1,3 +1,5 @@
+//Time: 16 ms (99.15%), Space: 14.1 MB (40.46%) - LeetHub
+
 class Solution {
 public:
     vector<vector<int>> shiftGrid(vector<vector<int>>& grid, int k) {
