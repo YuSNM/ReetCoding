@@ -1,3 +1,5 @@
+//Time: 0 ms (100.00%), Space: 6.9 MB (58.55%) - LeetHub
+
 class Solution {
     int M, N;
 public:
