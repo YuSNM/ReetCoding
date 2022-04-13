@@ -1,3 +1,5 @@
+//Time: 19 ms (85.09%), Space: 16.6 MB (96.67%) - LeetHub
+
 /*
 // Definition for a Node.
 class Node {
