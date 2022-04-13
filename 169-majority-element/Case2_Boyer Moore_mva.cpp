@@ -1,3 +1,4 @@
+//Time: 12 ms (98.16%), Space: 19.5 MB (80.05%) - LeetHub
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
