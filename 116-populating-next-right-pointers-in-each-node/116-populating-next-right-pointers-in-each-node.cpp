@@ -18,19 +18,21 @@ public:
 
 class Solution {
 public:
-    void dfs(Node* node) {
-        if(!node->left) return;
-        
-        node->left->next = node->right;        
-        if(node->next)
-            node->right->next = node->next->left;
-        
-        dfs(node->right);
-        dfs(node->left);
-    }
     Node* connect(Node* root) {
-        if(root)
-            dfs(root);
+        Node* prev = root, * cur;
+        
+        while(prev) {
+            cur = prev;
+            if(cur->left)
+                while(cur) {
+                    cur->left->next = cur->right;
+                    if(cur->next) 
+                        cur->right->next = cur->next->left;
+                    cur = cur->next;
+                }
+            prev = prev->left;
+        }
+        
         return root;
     }
 };
