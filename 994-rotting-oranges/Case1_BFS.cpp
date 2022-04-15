@@ -1,3 +1,5 @@
+//Time: 7 ms (80.23%), Space: 13.8 MB (13.15%) - LeetHub
+
 class Solution {
     const int dx[4] = {0, 1, 0, -1}, dy[4] = {1, 0, -1, 0};
     int M, N;
