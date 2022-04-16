@@ -10,12 +10,13 @@
  * };
  */
 class Solution {
+    int sum;
 public:
-    int DFS(TreeNode* root, int n = 0) {
-        if (!root) return n;
-        
-        root->val += DFS(root->right, n);
-        return DFS(root->left, root->val);
+    void DFS(TreeNode* node) {
+        if (!node) return;
+        DFS(node->right);
+        node->val = sum += node->val;
+        DFS(node->left);
     }
     TreeNode* convertBST(TreeNode* root) {
         DFS(root);
