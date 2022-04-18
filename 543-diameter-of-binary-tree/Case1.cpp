@@ -1,3 +1,5 @@
+//Time: 7 ms (92.61%), Space: 20.2 MB (92.74%) - LeetHub
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
