@@ -1,3 +1,5 @@
+//Time: 62 ms (72.48%), Space: 23.1 MB (53.25%) - LeetHub
+
 class Solution {
 public:
     bool validPalindrome(string s, int life = 1) {
