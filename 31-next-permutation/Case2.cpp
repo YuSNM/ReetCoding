@@ -1,3 +1,5 @@
+// Time: 4 ms (72.76%), Space: 11.9 MB (93.43%) - LeetHub
+
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
