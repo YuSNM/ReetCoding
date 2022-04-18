@@ -1,3 +1,5 @@
+//Time: 47 ms (98.53%), Space: 23 MB (53.25%) - LeetHub
+
 class Solution {
     bool check;
 public:
