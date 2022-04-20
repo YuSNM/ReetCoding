@@ -1,3 +1,5 @@
+//Time: 3 ms (98.07%), Space: 8.6 MB (68.22%) - LeetHub
+
 class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
