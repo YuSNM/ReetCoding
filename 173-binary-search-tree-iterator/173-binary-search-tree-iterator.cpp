@@ -10,22 +10,24 @@
  * };
  */
 class BSTIterator {
-    stack<int> st;
+    stack<TreeNode*> st;
 public:
-    void BST(TreeNode* node) {
-        if (!node) return;
-        BST(node->right);
-        st.push(node->val);
-        BST(node->left);
+    void LeftTree(TreeNode* node) {
+        while (node) {
+            st.push(node);
+            node = node->left;
+        }
     }
     BSTIterator(TreeNode* root) {
-        BST(root);
+        LeftTree(root);
     }
 
     int next() {
-        int temp = st.top();
+        TreeNode* top = st.top();
         st.pop();
-        return temp;
+        if (top->right)
+            LeftTree(top->right);
+        return top->val;
     }
     
     bool hasNext() {
