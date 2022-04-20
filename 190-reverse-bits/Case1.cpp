@@ -1,3 +1,4 @@
+//Time: 3 ms (62.53%), Space: 6 MB (10.92%) - LeetHub
 class Solution {
 public:
     uint32_t reverseBits(uint32_t n) {
