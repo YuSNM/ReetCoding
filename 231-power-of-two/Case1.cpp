@@ -1,3 +1,5 @@
+//Time: 0 ms (100.00%), Space: 5.7 MB (99.13%) - LeetHub
+
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
