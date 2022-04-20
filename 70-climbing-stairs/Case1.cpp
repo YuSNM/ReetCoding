@@ -1,3 +1,4 @@
+//Time: 0 ms (100.00%), Space: 5.7 MB (97.27%) - LeetHub
 class Solution {
     int mem[46] = {1, 1};
 public:
