@@ -1,9 +1,9 @@
 class Solution {
+    int mem[46] = {1, 1};
 public:
     int climbStairs(int n) {
-        vector<int> m(n+1, 1);
-        for(int i = 0, j = n-2; i <= j; i++) 
-            m[i+2] = m[i+1] + m[i];
-        return m[n];
+        for (int i = 2; i <= n; i++) 
+            mem[i] = mem[i-1] + mem[i-2];
+        return mem[n];
     }
 };
