@@ -1,8 +1,7 @@
 class MyHashSet {
-    bool hash[1000001];
+    vector<bool> hash;
 public:
-    MyHashSet() {
-        fill(hash, hash+1000001, 0);
+    MyHashSet() : hash(1e6 + 1, 0){
     }
     
     void add(int key) {
