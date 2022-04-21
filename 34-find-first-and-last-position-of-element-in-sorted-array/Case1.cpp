@@ -1,3 +1,5 @@
+//Time: 12 ms (47.16%), Space: 13.5 MB (85.31%) - LeetHub
+
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
