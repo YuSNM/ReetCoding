@@ -1,3 +1,4 @@
+//Time: 189 ms (34.61%), Space: 43.5 MB (46.70%) - LeetHub
 class MyHashSet {
     vector<bool> hash;
 public:
