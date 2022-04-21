@@ -1,3 +1,4 @@
+//Time: 7 ms (43.44%), Space: 11.1 MB (29.95%) - LeetHub
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
