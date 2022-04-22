@@ -1,3 +1,5 @@
+//Time: 0 ms (100.00%), Space: 10.2 MB (23.30%) - LeetHub
+
 class Solution {
 public:
     int findMin(vector<int>& nums) {
