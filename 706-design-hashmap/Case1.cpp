@@ -1,3 +1,5 @@
+//Time: 214 ms (42.01%), Space: 208.1 MB (36.75%) - LeetHub
+
 class MyHashMap {
     vector<int> map;
     
