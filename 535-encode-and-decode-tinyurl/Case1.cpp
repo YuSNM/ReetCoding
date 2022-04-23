@@ -1,3 +1,6 @@
+//Time: 0 ms (100.00%), Space: 7.6 MB (9.59%) - LeetHub
+
+
 class Solution {
 private:
     unordered_map<string, string> enc, dec;
