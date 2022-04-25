@@ -1,3 +1,5 @@
+//Time: 383 ms (5.19%), Space: 58 MB (84.54%) - LeetHub
+
 class UndergroundSystem {
     unordered_map<int, pair<string, int>> CI_db;
     unordered_map<string, unordered_map<string, pair<int, int>>> map;
