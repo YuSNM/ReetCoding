@@ -1,3 +1,5 @@
+// Time: 220 ms (82.04%), Space: 58.2 MB (65.64%) - LeetHub
+
 struct node {
     int from, to, dist;
     
