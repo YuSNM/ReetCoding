@@ -33,13 +33,6 @@ public:
         int lo = 0, hi = 1e6;
         N = heights.size(), M = heights[0].size();
         
-        for (auto& i : heights)
-            for (auto& j : i) 
-                if (lo > j)
-                    lo = j;
-                else if (hi < j)
-                    hi = j;
-        
         while (lo < hi) {
             K = lo + (hi - lo) / 2;
             
