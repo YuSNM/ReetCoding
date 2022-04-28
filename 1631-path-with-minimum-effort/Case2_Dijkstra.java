@@ -1,6 +1,4 @@
-
-
-//dijkstra
+//Time: 48 ms (91.97%), Space: 43 MB (83.57%) - LeetHub
 
 class Solution {
     
