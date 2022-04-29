@@ -3,16 +3,15 @@ class Solution {
 private:
     vector<int> visited;
 public:
-    
     bool DFS(vector<vector<int>>& graph, int x) {
-        for (auto& next : graph[x]) {
+        for (auto& next : graph[x]) 
             if (!visited[next]) {
                 visited[next] = 3 - visited[x];
                 if (!DFS(graph, next))
                     return false;
             }else if (visited[next] == visited[x])
                 return false;
-        }
+        
         return true;
     }
     bool isBipartite(vector<vector<int>>& graph) {
