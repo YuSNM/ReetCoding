@@ -1,3 +1,5 @@
+//Time: 1 ms (83.33%), Space: 53.7 MB (47.00%) - LeetHub
+
 class Solution {
     int[] visited;
     
