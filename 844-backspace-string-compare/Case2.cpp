@@ -1,3 +1,5 @@
+// Time: 2 ms (47.87%), Space: 6.3 MB (68.92%) - LeetHub
+
 class Solution {
 public:
     bool backspaceCompare(string s, string t) {
