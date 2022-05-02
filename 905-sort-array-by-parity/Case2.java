@@ -1,3 +1,5 @@
+//Time: 1 ms (96.61%), Space: 48.7 MB (15.61%) - LeetHub
+
 class Solution {
     public int[] sortArrayByParity(int[] nums) {
         int[] ans = new int[nums.length];
