@@ -1,3 +1,5 @@
+//Time: 24 ms (71.52%), Space: 11 MB (36.43%) - LeetHub
+
 class Solution {
 public:
     string removeDuplicates(string s, int k) {
