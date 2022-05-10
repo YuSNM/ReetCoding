@@ -1,3 +1,5 @@
+//Time: 0 ms (100.00%), Space: 6.5 MB (58.80%) - LeetHub
+
 class Solution {
     vector<vector<int>> ans;
     int K;
