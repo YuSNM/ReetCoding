@@ -15,14 +15,12 @@ public:
             return;
         
         int i = nums.size() - 1, j = nums.size();
-        while (--i >= 0) 
-            if (nums[i] < nums[i + 1]) {
-                while (nums[i] >= nums[--j]);
-                swap(nums[i], nums[j]);
-                break;
-            }
+        while (--i >= 0 && nums[i] >= nums[i + 1]);
         
+        if (i >= 0) {
+            while (nums[i] >= nums[--j]);
+            swap(nums[i], nums[j]);
+        }
         reverse(nums.begin() + i + 1, nums.end());
-        
     }
 };
