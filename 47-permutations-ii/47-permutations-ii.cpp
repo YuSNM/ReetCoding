@@ -1,9 +1,7 @@
 class Solution {
-private:
-    vector<vector<int>> ans;
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        
+        vector<vector<int>> ans;
         do {
             ans.push_back(nums);
             nextPermutation(nums);
@@ -13,22 +11,18 @@ public:
     }
     
     void nextPermutation(vector<int>& nums) {
-        int last = nums.size();
-        if (last < 2) 
+        if (nums.size() < 2) 
             return;
         
-        int i = last - 1, j = last;
-        while (1) {
-            if (--i < 0) {
-                reverse(nums.begin(), nums.end());
-                return;
-            }
+        int i = nums.size() - 1, j = nums.size();
+        while (--i >= 0) 
             if (nums[i] < nums[i + 1]) {
                 while (nums[i] >= nums[--j]);
                 swap(nums[i], nums[j]);
-                reverse(nums.begin() + i + 1, nums.end());
-                return;
+                break;
             }
-        }
+        
+        reverse(nums.begin() + i + 1, nums.end());
+        
     }
 };
