@@ -27,7 +27,6 @@ public:
         
         while (!q1->empty()) {
             Node *prev = NULL;
-            
             for (Node *node : (*q1)) {
                 if (node->left)
                     q2->push_back(node->left);
@@ -41,6 +40,8 @@ public:
             q1->clear();
             swap(q1, q2);
         }
+        delete q1;
+        delete q2;
         return root;
     }
 };
