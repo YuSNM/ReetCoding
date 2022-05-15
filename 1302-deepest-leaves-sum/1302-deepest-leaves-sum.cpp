@@ -14,24 +14,15 @@ private:
     int sum = 0;
     int maxd = 0;
 public:
-    void dfs(TreeNode* node, int d) {
-        
-        if (!node->left && !node->right) {
+    int deepestLeavesSum(TreeNode* node, int d = 0) {
+        if (!node) return 0;
+        if (!(deepestLeavesSum(node->left, d + 1) | deepestLeavesSum(node->right, d + 1))) {
             if(d > maxd) {
                 sum = node->val;
                 maxd = d;
             }else if (d == maxd)
                 sum += node->val;
-            return;
         }
-        if (node->left)
-            dfs(node->left, d + 1);
-        if (node->right)
-            dfs(node->right, d + 1);
-        
-    }
-    int deepestLeavesSum(TreeNode* root) {
-        dfs(root, 0);
         return sum;
     }
     
