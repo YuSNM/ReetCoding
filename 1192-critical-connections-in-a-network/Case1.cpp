@@ -1,3 +1,5 @@
+//Time: 697 ms (76.20%), Space: 178.1 MB (67.69%) - LeetHub
+
 class Solution {
     int time = 0;
     vector<int> low;
