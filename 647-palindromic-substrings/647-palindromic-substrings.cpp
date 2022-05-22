@@ -1,3 +1,5 @@
+//Time: 6 ms (76.20%), Space: 6.3 MB (82.67%) - LeetHub
+
 class Solution {
 public:
     int countSubstrings(string s) {
