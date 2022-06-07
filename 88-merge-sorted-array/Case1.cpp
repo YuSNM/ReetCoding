@@ -1,3 +1,5 @@
+//Time: 7 ms (24.43%), Space: 9.1 MB (30.68%) - LeetHub
+
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
