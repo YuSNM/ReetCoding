@@ -1,25 +1,40 @@
+
+struct Trie {
+    unordered_map<char, Trie*> next;
+    Trie() { };
+    
+    int insert(const string& word) {
+        Trie* node = this;
+        int i = word.size() - 1, cnt = 0;
+        bool subs = 1, dif = 0;
+        
+        if (node->next.count(word.back())) {
+            subs = 0;
+            node = node->next[word[i--]];
+            for (; i >= 0 && node->next.count(word[i]); --i) 
+                node = node->next[word[i]];
+        }
+        
+        for (; i >= 0; --i) {
+            if (!dif && node->next.size())
+                dif = 1;
+            node->next[word[i]] = new Trie();
+            node = node->next[word[i]];
+            cnt++;
+        }
+        if (dif)
+            return word.size() + 1;
+        return cnt + subs;
+    }
+};
+
 class Solution {
+    Trie root;
 public:
     int minimumLengthEncoding(vector<string>& words) {
         int ans = 0;
-        unordered_map<string, int> m;
-        string temp;
-        
-        sort(words.begin(), words.end(), [] (const string& a, const string& b) {
-            return a.size() > b.size();});
-        
-        for (string& s : words)
-            ++m[s];
-        
-        for (string& s : words) {
-            if (m[s] > 0)
-                ans += s.size() + 1;
-            
-            for (int i = s.size() - 1; i >= 0; --i)
-                if (m.count(temp = s.substr(i)))
-                    m[temp] = 0;
-        }
-        
+        for (string& word : words)
+            ans += root.insert(word);
         return ans;
     }
 };
