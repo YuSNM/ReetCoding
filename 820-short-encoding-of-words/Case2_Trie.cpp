@@ -1,3 +1,4 @@
+// Time: 201 ms (19.81%), Space: 66.3 MB (45.55%) - LeetHub
 
 struct Trie {
     unordered_map<char, Trie*> next;
