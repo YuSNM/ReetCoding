@@ -1,3 +1,5 @@
+// Time: 112 ms (55.45%), Space: 19.2 MB (65.35%) - LeetHub
+
 class Solution {
 public:
     int minimumLengthEncoding(vector<string>& words) {
