@@ -1,3 +1,5 @@
+//Time: 214 ms (62.50%), Space: 49.7 MB (52.56%) - LeetHub
+
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
