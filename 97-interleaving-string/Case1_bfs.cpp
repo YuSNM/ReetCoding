@@ -1,3 +1,5 @@
+// Time: 6 ms (61.58%), Space: 6.8 MB (58.84%) - LeetHub
+
 class Solution {
     bool box[101][101];
 public:
