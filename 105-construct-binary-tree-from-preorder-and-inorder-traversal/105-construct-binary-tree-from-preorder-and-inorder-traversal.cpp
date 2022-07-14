@@ -11,7 +11,6 @@
  */
 class Solution {
     unordered_map<int, int> inIDX;
-    int preCNT = 0;
     vector<int>::iterator it;
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
