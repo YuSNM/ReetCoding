@@ -1,17 +1,9 @@
 class Solution {
 public:
     int mirrorReflection(int p, int q) {
-        int lcm = p * q / GCD(p, q);
-        
-        if (lcm / p % 2 == 0)
-            return 0;
-        if (lcm / q % 2 == 0)
-            return 2;
-        return 1;
+        return (q / GCD(p, q) % 2) + (p / GCD(p, q) % 2 == 0);
     }
     int GCD(int a, int b) {
-        if (!b)
-            return a;
-        return GCD(b, a%b);
+        return b ? GCD(b, a%b) : a;
     }
 };
